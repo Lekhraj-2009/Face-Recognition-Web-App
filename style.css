@@ -1,0 +1,37 @@
+body{
+    color: black;
+    background-color: pink;
+    scroll-behavior: smooth;
+}
+#camera{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}
+.name_of_objects, #result_object_name, #result_object_accuracy{
+    color: darkblue;
+}
+.heading{
+    font-family: 'Roboto Slab', serif;
+    font-size: 45px;
+}
+.object-container{
+    width: 75%;
+    border: 2px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.object-container hr{
+    width: 90%;
+    border-color: rgb(102, 102, 102);
+}
+#object{
+    margin-top: 10px;
+}
+#accuracy{
+    margin-bottom: 10px;
+}
+#result{
+    width: 40%;
+    border: 2px solid darkblue;
+}

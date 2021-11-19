@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Face Recognition Web App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <div class="container"></div>
+                <h1 class="heading">FACE RECOGNITION WEB APP</h1>
+                <hr>
+                <h4 style="margin-top: 25px">Model is trained to identify the following members:</h4>
+                <br>
+                <b class="name_of_objects" style="font-size: 20px;">
+                    <div class="object-container">
+                        Mother
+                        <hr>
+                        Father
+                        <hr>
+                        Myself
+                    </div>
+                </b>
+                <br>
+                <section id="capture_image">
+                    <br>
+                    <br>
+                    <label style="font-size: 16px; margin-top: 5px;">Webcam View</label>
+                    <div id="camera"></div>
+                    <br><br>
+                    <div id="result_img"></div>
+                    <br>
+                    <a onclick="takeSnapshot()" class="btn btn-info" style="margin-top: 7.5px;" href="#capture_image">Capture Image</a>
+                    <br><br>
+                    <a onclick="check()" class="btn btn-success" href="#result">Identify Image</a>
+                    <br>
+                    <br>
+                    <br>
+                </section>
+                <br>
+                <label style="font-size: 15px;">RESULT</label>
+                <section id="result">
+                    <p style="font-size: 22px;" id="object"><b>Object</b>: <span id="result_object_name" style="color: darkgreen;"></span></p>
+                    <p style="font-size: 22px;" id="accuracy"><b>Accuracy</b>: <span id="result_object_accuracy" style="color: darkgreen;"></span></p>
+                </section>
+                <br>
+            </div>
+        </center>
+        <!--JS File Link-->
+        <script src="main.js"></script>
+    </body>
+</html>
